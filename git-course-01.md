@@ -37,3 +37,7 @@
 
 ## Merge e Rebase
 
+* **Merge** - Quando faço modificações em diferentes branchs e faço um merge entre elas, é criado um commit a mais com o merge. Cria commits extrar. 
+     - Se você já terminou sua feature e você quer jogar pro master, é ideal que use o merge. O commit a mais que ele cria ele documenta exatamente o momento que um bug foi ou não introduzido. Fica no log.
+
+* **Rebase** - Se eu quero só atualizar minha branch com a master eu uso o `pull rebase` 
