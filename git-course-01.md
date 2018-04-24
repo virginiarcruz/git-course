@@ -21,11 +21,19 @@
 
 ## Branchs
 
-* Para criar novas branchs posso ir no botão inferior esquerdo onde há nome da branch atual, ou pressionar `ctrl + sft + p`, digitar git branch e escolher o que quer fazer.
+* Para criar novas branchs posso ir no botão inferior esquerdo onde há nome da branch atual, ou pressionar `ctrl + shift + p`, digitar git branch e escolher o que quer fazer.
 
 ## Subir um repositorio local par ao git.
 
 * Adicionar o plugin - **Git Add Remote**
-* `ctrl + sft + p` - e o comando git remote para adicionar o repositório.
+* `ctrl + shift + p` - e o comando git remote para adicionar o repositório.
     - origin
     - link do repositório e ele fará a sincronização com o repositório criado no git.
+
+
+* Para ver as modificações realizadas adicionar o pluign - **Git History**
+    - `ctrl + shift + p` - git view history para ver a árvore com as modificações em todas as branchs
+
+
+## Merge e Rebase
+
