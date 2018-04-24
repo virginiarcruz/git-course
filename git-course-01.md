@@ -39,5 +39,22 @@
 
 * **Merge** - Quando faço modificações em diferentes branchs e faço um merge entre elas, é criado um commit a mais com o merge. Cria commits extrar. 
      - Se você já terminou sua feature e você quer jogar pro master, é ideal que use o merge. O commit a mais que ele cria ele documenta exatamente o momento que um bug foi ou não introduzido. Fica no log.
+     - Pra fazer o merge posso ir na parte superior direita e clicar em "..." > `Pull from` e escolher qual branch quero fazer o merge.
 
-* **Rebase** - Se eu quero só atualizar minha branch com a master eu uso o `pull rebase` 
+* **Rebase** - Se eu quero só atualizar minha branch com a master eu uso o `pull rebase`
+    - O Rebase vai pegar as atualizações da minha branch com a que eu setei como upstrem. Aqui disse que quero deixar ela atualizada com a origin master. 
+    - Não vai fazer nenhum commit a mais.
+         
+          git branch --set-upstream-to=origin/master redesign-navrebase
+    
+    - Vai ser útil para evitar commits sujos e a ramificação no histórico dos commits.
+
+
+## Git Blame
+
+- Avisa o autor e o commit naquela mudança de código.
+
+
+## Stash
+
+- Pra salvar as mudanças antes de um commit. Salvo as mudanças num stash e depois volto a editar aquele stash.
