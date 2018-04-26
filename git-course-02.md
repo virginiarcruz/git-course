@@ -60,3 +60,19 @@
     `esc:wq` - para salvar e digito a mensagem e salvo.
 ## Juntando commits com fixup e autosquash
 
+- Quando quero corrigir um commit anterior.
+- Pego a hash do commit que estou corrigindo com o git log
+
+      git add
+      git commit --fixup HASH
+
+
+- Se quero juntar 3 commits em 1 só
+    - volto até antes do commti que quero juntar, pego a hash do commit que está abaixo do último que quero juntar
+    
+    `git rebase -i --autosquash HASH`
+
+    - Esse comando vai verificar os fixup e vai determinar para fazer o squash
+    - Vai aparecer os 3 commits e o que ele vai juntar no pick. Então so salvar e ele vai fazer o rebase e juntar os 3 commits em 1 só.
+
+# Resolvendo divergências de repositórios com --rebase
