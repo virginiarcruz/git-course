@@ -53,4 +53,10 @@
 
     1. vou para o commit que eu quero. No caso o Head-2 é porque eu quero ir para o segundo commit abaixo do HEAD que ele está.
             
-            `git rebase -i HEAD-2`
+            `git rebase -i HEAD~2`
+
+    - squash é o que utilizo para juntar com o comando anterior.
+    - aperto i para editar no VIM, deixo o primeiro como pick e o segundo como squash que é pra juntar
+    `esc:wq` - para salvar e digito a mensagem e salvo.
+## Juntando commits com fixup e autosquash
+
