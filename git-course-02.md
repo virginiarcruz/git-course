@@ -76,3 +76,5 @@
     - Vai aparecer os 3 commits e o que ele vai juntar no pick. Então so salvar e ele vai fazer o rebase e juntar os 3 commits em 1 só.
 
 # Resolvendo divergências de repositórios com --rebase
+
+- Como fizemos várias modificações a branch master está desatualizada com a origin/master. É necessário igualar essas branchs para ser possível fazer o `git push`
