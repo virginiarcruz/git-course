@@ -31,3 +31,26 @@
     - vou pra minha branch
     - `git cherry-pick` + o hash
 
+
+## Para atualização de conteúdo
+
+- Para separar os conteúdos de um commit
+    - `git add -p`
+    - ele vai abrir para mim o menu para que eu possa decidir se eu quero ou não adicionar tais pedaços e ele mostra da mudanças realizadas então você tem as opções:
+        - Y - adicionar
+        - N - não add
+        - Q - não adicione e saia imediatamente desse menu.
+        - A - adiciona esse e todos os outros que vierem 
+        - D - funciona igual ao Q não adiciono esse e nem os outros mas não sai
+        - J - passar o hank e definir o próximo
+        - G - passa esse e ver o anteior
+        - S - divide em partes menores
+        - E - para editar manualmente
+
+## Juntando commits com Squash
+
+- Quando criamos uma feature e criamos vários commits, e então queremos juntar os commits criando um commit só com a aquela feature
+
+    1. vou para o commit que eu quero. No caso o Head-2 é porque eu quero ir para o segundo commit abaixo do HEAD que ele está.
+            
+            `git rebase -i HEAD-2`
