@@ -82,3 +82,13 @@
       
       git pull origin master --rebase
 - Essa é uma forma de resolver conflitos de commits que estão em divergência e/ou commits que são unidos.
+
+## Resolvendo conflitos em modo manual
+
+* Quando mais de uma pessoa trabalha no mesmo arquivo e fazem mudanças
+* Ao ocorrem conflitos o git irá avisar quais os arquivos, pode ser visto com `git status`, ele irá mostrar quais os arquivos estão em conflitos e vai lhe dar a opção dentro do arquivo de todas as modificações e quais você quer aceitar.
+* Após aceitar a mudança `git add [nomedoarquivo]
+* **Resolvido todos os conflitos** - basta mandar o merge continuar com `git merge --continue`
+    - vai abrir a interface do VIM para, caso necessário, modificar o texto do commit
+* Lembrando que você precisa usar o continue, se você utilizar um `git commit` vai exbir erro.
+
